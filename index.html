@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook-P4-TM08</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <header>
+        <h1><span class="book-icon">📋</span> <strong>Playbook Sesión 8 4to Primaria</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">📝</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+                <li><a href="#activity-5">5</a></li>
+            </ul>
+
+            <div class="sidebar-info">
+                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo: Sesión Gnius</h2>
+                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
+                <div class="overview-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
+                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Objetivos de Aprendizaje:</strong>
+                                    <ul>
+                                        <li>Cutebot & A.I. Lens (Números) & tu plan (el GCS): Cutebot reacciona a números detectados.</li>
+                                        <li>IA: Usar ID del número para control.</li>
+                                        <li>Parte de la Currícula de IA cubierta: AIA: Introducción al ML: Aplicación de reconocimiento numérico.</li>
+                                        <li>Objetivo General de la Sesión: Que los estudiantes programen al Cutebot para que realice diferentes acciones o comportamientos basados en el número específico que la Smart A.I. Lens reconozca en una tarjeta, aplicando el reconocimiento numérico de la IA para controlar el robot.</li>
+                                    </ul>
+                                    <strong>Secuencia de Clase:</strong>
+                                    <ul>
+                                        <li>⚡ Actividad 1: Saludo de I.A. con todos</li>
+                                        <li>⚡ Actividad 2: I Can Statement + Ejemplificación</li>
+                                        <li>⚡ Actividad 3: AI GYM</li>
+                                        <li>⚡ Actividad 4: Brain Spark</li>
+                                        <li>⚡ Actividad 5: Gnius STORM (Think-Pair-Share)</li>
+                                    </ul>
+                                    <strong>Entregable Clave:</strong>
+                                    <ul>
+                                        <li>Programa en Micro:bit donde el Cutebot, usando la A.I. Lens, reconoce tarjetas de números específicos (ej. 1, 2, 3) y realiza diferentes acciones para cada número, creado a partir de tu plan (el GCS) y lógica condicional múltiple.</li>
+                                        <li>Participación en la discusión sobre cómo el ID de un número puede controlar un robot.</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <strong>Materiales Específicos:</strong>
+                                    <ul>
+                                        <li>Proyector o pantalla interactiva.</li>
+                                        <li>Conexión a internet estable.</li>
+                                        <li>Chat de "Agente Gnius" (Xolo) activo.</li>
+                                        <li>Presentación de diapositivas (Diapositivas 1-11).</li>
+                                        <li>Robots Cutebot (1 por cada 2 estudiantes, con A.I. Lens conectada).</li>
+                                        <li>Smart A.I. Lens (1 por cada 2 estudiantes, conectada al Cutebot).</li>
+                                        <li>Micro:bits y baterías (1 por cada 2 estudiantes).</li>
+                                        <li>Acceso a MakeCode (<a href="https://makecode.microbit.org/" target="_blank">https://makecode.microbit.org/</a>), con extensión de A.I. Lens.</li>
+                                        <li>Tarjetas de números (ej. 1, 2, 3, y opcionalmente 4, 5, o las que se decidan usar).</li>
+                                    </ul>
+                                    <strong>Preparación Previa para ESTA Sesión:</strong>
+                                    <ol>
+                                        <li><strong>Revisión de Misión (Interna):</strong>
+                                            <ul>
+                                                <li>Verificar conexión a internet.</li>
+                                                <li>Confirmar acceso y funcionamiento de MakeCode y la extensión de A.I. Lens.</li>
+                                                <li>Asegurar disponibilidad, carga y conexión de Cutebots, A.I. Lens y Micro:bits.</li>
+                                                <li>Tener la presentación de diapositivas lista y en orden.</li>
+                                                <li>Probar el chat "Agente Gnius" (Xolo) para asegurar su operatividad.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Familiarización:</strong> Revisar el flujo de la sesión, los diálogos sugeridos y los tiempos de cada actividad.</li>
+                                        <li><strong>Ejemplo Profesor:</strong> Tener listo y funcional tu proyecto de ejemplo (Cutebot que al ver la tarjeta '1' avanza; al ver la '2' retrocede; y al ver la '3' gira) para la demostración en la Actividad 2.</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: Saludo de I.A. con todos ⏰ 3 minutos</h2>
+                <p>El chatbot da la bienvenida y anticipa que los números se convertirán en "códigos secretos" para Cutebot.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Saludo de I.A. con todos ⏰ 0.5 minutos</h3>
+                            <p>(Proyectar Diapositiva 2). Da la bienvenida a los alumnos, recordando la habilidad de la A.I. Lens para leer números y adelantando el nuevo desafío. Pídeles que activen a Xolo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Hola, comandantes numéricos! Ya logramos que nuestra A.I. Lens 'lea' los números de las tarjetas. ¡Eso es genial! Pero, ¿qué pasaría si esos números fueran como códigos secretos para darle órdenes a nuestro Cutebot? Hoy vamos a hacer precisamente eso: ¡Cutebot va a reaccionar y moverse según el número que su lente IA le diga! Antes de empezar, activen a Xolo. Salúdenlo en el chat con su nombre y sus gustos. Por ejemplo: 'Hola Xolo, soy [Nombre] y me gustan los juegos de espías y los números'."</p>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Saludo de I.A. con todos ⏰ 2.5 minutos</h3>
+                            <p>Monitorea a los alumnos mientras interactúan con Xolo. Asegúrate de que todos reciban una respuesta y resuelve cualquier problema técnico.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Excelente! Xolo está listo para esta misión de control numérico. Si alguien no ha recibido respuesta de Xolo, levante la mano.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: I Can Statement + Ejemplificación ⏰ 5 minutos</h2>
+                <p>Presentar cómo los números pueden ser instrucciones para Cutebot y el objetivo de la clase.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Introducción y Contextualización ⏰ 2 minutos</h3>
+                            <p>(Proyectar Diapositiva 3). Introduce la idea de que Cutebot realice diferentes acciones según el número que vea (ej. '1' avanza, '2' gira).</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Ya sabemos que la lente puede identificar un número, por ejemplo, el '1', el '2' o el '3'. Ahora, vamos a usar esa información para que Cutebot haga cosas diferentes. Si ve el '1', podría avanzar; si ve el '2', podría girar; si ve el '3', podría encender sus luces de un color especial. Es como si cada número fuera una instrucción diferente para el robot. Esto nos permite darle órdenes más específicas usando las tarjetas.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Presentación del Proyecto del Profesor ⏰ 1 minuto</h3>
+                            <p>Muestra tu proyecto de ejemplo (Cutebot reaccionando a tarjetas '1', '2', '3') ya cargado y funcionando. Esta es una demostración en vivo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Miren este ejemplo que preparé: (Muestra el Cutebot. Al presentarle la tarjeta '1', avanza; al ver la '2', retrocede; y al ver la '3', gira). Mi 'idea (vibe)' fue que Cutebot obedeciera diferentes números como si fueran comandos.</p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: "I Can Statement" y Conexión ⏰ 2 minutos</h3>
+                            <p>(Proyectar Diapositiva 4). Presenta formalmente el 'I Can Statement'.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Al final de la clase, podrán decir: '<strong>Yo puedo programar mi Cutebot para que, usando la A.I. Lens, reconozca una tarjeta de número específica y realice una acción diferente para distintos números, utilizando tu plan (el GCS) y condiciones SI.</strong>' ¡A darle órdenes numéricas a Cutebot!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-3">
+                <h2>⚡ Actividad 3: AI GYM ⏰ 7 minutos</h2>
+                <p>Introducir cómo combinar `Card(s)' info: ID` con condiciones SI para que Cutebot reaccione a números específicos, y el concepto de usar el ID del número para control.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Instrucción Inicial y Contextualización de la IA ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 5). Presenta el A.I. GYM y da la instrucción para que los alumnos pidan la información a Xolo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Genios, al A.I. GYM! 🧠💪 Xolo nos explicará cómo usar el ID del número que "lee" la A.I. Lens para controlar a Cutebot con condiciones SI, y cómo esto se aplica en el mundo real. Escriban en el chat: 'Mi perfil es [escribe aquí tus gustos/intereses] y quiero aprender cómo Cutebot reacciona a números específicos y cómo se usa el ID del número para controlarlo'.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Interacción Guiada y Ejemplo de Plan (GCS) ⏰ 6 minutos</h3>
+                            <p>(Proyectar Diapositivas 6 y 7). Monitorea a los alumnos. Xolo les explicará cómo usar `Card(s)' info: ID == (número)` dentro de condiciones `SI...SINO SI...` para diferentes acciones. Mencionará que el ID del número (lo que "lee" la IA) se usa como señal de control, como en robots de almacén que van a estanterías numeradas.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">(Mientras los alumnos interactúan con Xolo) ¡Muy bien! Xolo les está enseñando que usamos `Card(s)' info: ID` (que nos da el número de la tarjeta) y lo combinamos con condiciones `SI` o `SI...SINO SI...`. Por ejemplo: `SI (Card(s)' info: ID == 1) ENTONCES cutebot_avanzar(50)`. Les explicará que el número que "lee" la IA (el ID de la tarjeta) se usa como una señal para controlar al robot. ¡Es como si el número fuera una orden! Piensen en un robot de almacén que va a la estantería número '5' cuando ve esa tarjeta.</p>
+                                <p class="dialogue assistant">Para que vean un ejemplo de tu plan (el GCS) reaccionando a varios números, Xolo podría presentarles esto:</p>
+                                <pre class="dialogue assistant" style="color: #d32f2f;">
+AL INICIO:
+    Initialize AI-Lens
+    Switch function as Card recognition
+    mostrar texto "Dame una orden!"
+
+POR SIEMPRE:
+    fijar variable "orden_numero" a Card(s)' info: ID
+    SI (variable "orden_numero" == 1):
+        cutebot_avanzar(50)
+    SINO SI (variable "orden_numero" == 2):
+        cutebot_girar_izquierda(50)
+    SINO SI (variable "orden_numero" == 3):
+        cutebot_retroceder(50)
+    FIN SI
+    ESPERAR 0.1 segundos
+                                </pre>
+                                <p class="dialogue assistant">Si tienen dudas, ¡pregúntenle a Xolo! Por ejemplo: <br>
+                                <strong>* 'Xolo, ¿puedo usar números más grandes como el 10 o el 20?'</strong><br>
+                                <strong>* 'Si un robot de almacén se equivoca de número, ¿qué pasaría?'</strong> (Relacionar con sus gustos) <br>
+                                <strong>* '¿Los códigos de barras funcionan de forma parecida?'</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-4">
+                 <h2>⚡ Actividad 4: Brain Spark ⏰ 20 minutos</h2>
+                <p>Ideación de acciones por número, traducción a tu plan (el GCS), implementación, prueba y refinamiento.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Introducción al Brain Spark ⏰ 1 minutos</h3>
+                            <p>(Proyectar Diapositiva 8). Presenta la actividad como la fase creativa principal. Recuerda a los alumnos que trabajarán en parejas y compartirán el material.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Tiempo, comandantes numéricos! Ahora al Brain Spark, donde programarán a Cutebot para que obedezca sus órdenes numéricas. Recuerden que trabajarán en parejas, así que necesitarán compartir el Cutebot, la A.I. Lens y el Micro:bit para programar y probar.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Ideación (La "idea (vibe)" de Acciones por Número) ⏰ 3 minutos</h3>
+                            <p>Anima a los alumnos a pensar en una 'idea (vibe)' individual de qué acciones quieren que Cutebot realice para diferentes números. Deberán organizarse con su compañero para turnarse al programar y probar sus respectivas ideas.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                 <p class="dialogue assistant">¿Qué quieren que haga su Cutebot cuando vea diferentes números? Quizás: 'Quiero que si Cutebot ve la tarjeta '1', avance; si ve la '2', retroceda; y si ve la '3', se detenga y encienda luces.' O 'Mi Cutebot hará un baile: con el '1' gira a la izquierda, con el '2' gira a la derecha.' ¡Incluso pueden pensar en que el número afecte la velocidad o duración! Piensen en su 'idea (vibe)' individual. Luego, hablen con su compañero para organizarse y decidir cómo se turnarán para usar el material para programar y probar cada una de sus ideas. Si necesitan inspiración, consulten a Xolo: 'Exploremos ideas juntos para que Cutebot reaccione a diferentes números'."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Planificación con IA (El "plan (el GCS)") y Logística ⏰ 4 minutos</h3>
+                            <p>(Proyectar Diapositiva 9). Guía a los alumnos sobre cómo comunicar su 'idea (vibe)' a Xolo para obtener 'tu plan (el GCS)'. Asegúrate de que cada pareja tenga su material y tarjetas de números.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¿Ya tienen su 'idea (vibe)' de acciones por número? ¡Genial! Descríbansela a Xolo, y él les ayudará a construir la secuencia de condiciones `SI...SINO SI...` y a crear 'tu plan (el GCS)'. Por ejemplo, si su 'idea (vibe)' es: 'Reaccionar a los números 1, 2 y 3 con diferentes movimientos y luces'.</p>
+                                <p class="dialogue assistant">Xolo podría generar 'tu plan (el GCS)' así:</p>
+                                <pre class="dialogue assistant" style="color: #d32f2f;">
+AL INICIO:
+    Initialize AI-Lens
+    Switch function as Card recognition
+    mostrar texto "Espero numeros!"
+
+POR SIEMPRE:
+    fijar variable "numero_orden" a Card(s)' info: ID
+
+    SI (variable "numero_orden" == 1):
+        cutebot_avanzar(60)
+        cutebot_todos_los_led(VERDE)
+    SINO SI (variable "numero_orden" == 2):
+        cutebot_retroceder(60)
+        cutebot_todos_los_led(AMARILLO)
+    SINO SI (variable "numero_orden" == 3):
+        cutebot_detener()
+        cutebot_todos_los_led(ROJO)
+        ESPERAR 1 segundo
+        cutebot_apagar_leds()
+    SINO:
+        // Acción por defecto si no es 1, 2 o 3
+    FIN SI
+
+    ESPERAR 0.2 segundos
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 4: Implementación, Prueba y Refinamiento ⏰ 11 minutos</h3>
+                            <p>Da tiempo a los alumnos para traducir 'tu plan (el GCS)' a bloques, enfocándose en la lógica condicional múltiple. Prueban presentando diferentes tarjetas de números. Ajustan acciones y refinan.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡A programar las órdenes numéricas! Tomen 'tu plan (el GCS)' de Xolo y pásenlo a bloques en MakeCode. Presenten diferentes tarjetas de números al Cutebot y observen si realiza la acción programada. ¿El Cutebot hace lo correcto para cada número? ¿Las acciones son claras? ¿Qué pasa si le muestran un número para el que no programaron una acción? Si tienen una 'idea de mejora' como 'Quiero añadir una acción para el número 4' o 'Quiero que la velocidad de avance dependa del número', ¡díganle a Xolo para modificar 'tu plan (el GCS)'! Recuerden turnarse.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 5: Mejoras y Desafíos ⏰ 1 minutos</h3>
+                            <p>Ofrece desafíos adicionales.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¿Su Cutebot ya obedece órdenes como un soldado? ¡Impresionante! Para un desafío extra: ¿Pueden hacer que Cutebot cuente cuántas veces ve un número específico y reaccione diferente después de, por ejemplo, tres veces? ¡Consulten con Xolo!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-5">
+                <h2>⚡ Actividad 5: Gnius STORM ⏰ 5 minutos</h2>
+                <p>Los alumnos muestran cómo sus Cutebots obedecen "órdenes numéricas" y reflexionan sobre la IA y el control.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Gnius STORM (Think - Individual) ⏰ 0.5 minutos</h3>
+                            <p>(Proyectar Diapositiva 10). Presenta la actividad.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Tiempo, programadores de robots obedientes! Han hecho un gran trabajo en el Brain Spark. Ahora, en nuestro Gnius STORM, vamos a ver cómo sus Cutebots siguen las órdenes numéricas.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Gnius STORM (Pair - Parejas) ⏰ 0.5 minutos</h3>
+                            <p>Reflexión individual.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Antes de mostrarlo, piensen 30 segundos: <strong>¿Qué fue lo más interesante de usar números para controlar al Cutebot? ¿Se sintieron como si estuvieran dando 'comandos secretos'? ¿Qué orden fue la más divertida de programar?</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Gnius STORM (Share - Retroalimentación) ⏰ 1.5 minutos</h3>
+                            <p>Indica a los alumnos que se junten en parejas, muestren cómo sus Cutebots obedecen las "órdenes numéricas" y expliquen su lógica.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Muy bien! Con su compañero, muestren cómo su Cutebot obedece las órdenes numéricas. Expliquen: <strong>'Mi Cutebot, cuando ve el número [número], hace [acción]. Lo programé con un SI para cada número.'</strong> El compañero debe observar y probar con las tarjetas.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 4: Gnius STORM (Reflexión Final) ⏰ 1.5 minutos</h3>
+                            <p>Guía la retroalimentación.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Ahora, la retroalimentación. Después de ver al Cutebot de su compañero, díganle: <br>
+                                <strong>* 'Me gustó cómo tu Cutebot reaccionó al número [número específico] haciendo [acción].'</strong><br>
+                                <strong>* '¡Qué buena 'idea (vibe)' usar el número para [propósito del compañero]!'</strong><br>
+                                <strong>* 'Para la próxima, podrías intentar que reaccione al número [nuevo número] de esta manera [nueva acción]...'</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 5: Gnius STORM (Reflexión Final) ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 11). Cierra la sesión reforzando cómo la IA usa información (números) para controlar acciones físicas, haciendo robots más interactivos.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Fantástico trabajo, programadores! Han logrado que su Cutebot interprete los números que ve la A.I. Lens y actúe en consecuencia. Esto es una demostración muy poderosa de cómo la IA puede tomar información del mundo (los números en las tarjetas) y usarla para controlar acciones físicas. Están aplicando el reconocimiento numérico para hacer robots más interactivos e 'inteligentes'. Hoy lograron decir: '<strong>Yo puedo programar mi Cutebot para que, usando la A.I. Lens, reconozca una tarjeta de número específica y realice una acción diferente para distintos números, utilizando tu plan (el GCS) y condiciones SI.</strong>' ¡Han comandado a sus robots con números!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
